@@ -1,0 +1,16 @@
+ <script>
+ const person = {
+    fullName: function(city,country) {
+      return this.firstName + " " + this.lastName+"  ,"+city+","+country;
+    }
+  }
+  
+  const person1 = {
+    firstName: "Vraj",
+    lastName: "Thakkar"
+  }
+  
+  
+  // This will return "Mary Doe":
+document.write( person.fullName.apply(person1,["abc","xyz"]));
+</script>
